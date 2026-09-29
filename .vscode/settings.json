@@ -1,0 +1,6 @@
+{
+  "cSpell.words": ["geist"],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

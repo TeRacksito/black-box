@@ -3,7 +3,7 @@
 import { cx } from "@/utils/cx";
 import { useEffect, useState } from "react";
 
-const Footer = () => {
+const Header = () => {
   const [isBottom, setIsBottom] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -31,7 +31,7 @@ const Footer = () => {
       <footer
         data-theme="dark"
         className={cx(
-          "sticky bottom-0 bg-background text-muted m-2 mb-0 p-2 rounded-t-2xl transition-all duration-500",
+          "sticky bottom-0 bg-background text-muted m-2 mb-0 p-2 rounded-t-3xl transition-all duration-500",
           isLoaded && isBottom ? "" : "translate-y-20",
         )}
       >
@@ -41,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Header;
